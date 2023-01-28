@@ -1,0 +1,229 @@
+Summary,Issue key,Status,Project type,Project lead,Priority,Resolution,Creator,Labels,Labels,Labels,Labels,Labels,Labels,Description
+Use Case 32: Transfer Display Menu Incorrect,A1-30,In Progress,software,Noureldin Amer,Low,,Bryant Stevens,lowseverity,phase3,v1.1,,,,"Function: Transferring and cancelling
+
+State: System is on and logged in
+
+Steps: Try to cancel the transaction when in transferring
+
+Expected: Cancel the transaction and display the cancelling message
+
+Actual: The menu does not display the full message and is partially cut off. "
+Test Case 37: Correct re-entry of PIN does not grant access to account,A1-27,Done,software,Noureldin Amer,Medium,Done,Bryant Stevens,critical,fixed,phase3,v1.1,,,"Function: Login
+
+State: System is on
+
+Steps: Attempt first try with incorrect PIN and attempt again  with correct PIN
+
+Expected: Accepts the second attempt
+
+Actual: Rejest all two attempts and prompts for the third attempt"
+Test Case 39: Unable to login after first failed PIN attempt,A1-26,In Progress,software,Noureldin Amer,Medium,,Bryant Stevens,pending,phase2,v1.0,,,,"Function: Login
+
+State: System is on
+
+Steps: Attempt first try with incorrect PIN and attempt again  with correct PIN
+
+Expected: Accepts the second attempt
+
+Actual: Rejest all two attempts and prompts for the third attempt"
+Test Case 40: Invalid PIN on third attempt to login,A1-25,In Progress,software,Noureldin Amer,Medium,,Bryant Stevens,pending,phase2,v1.0,,,,"Function: Login
+
+State: System is on
+
+Steps: Inputting two incorrect PINs and input the correct as the third PIN
+
+Expected: First two attempts should give error messages and the third attempt is accepted
+
+Actual: All three attempts are rejected even with the attempt with the correct PIN"
+Use Case 36: Invalid PIN allows login ,A1-24,In Progress,software,Noureldin Amer,Highest,,Bryant Stevens,critical,pending,phase2,v1.0,,,"Function: Login
+
+State: System is on
+
+Steps: Login to card 1 with incorrect password 042
+
+Expected: Error message is displayed
+
+Actual: PIN is accepted and have access to the account"
+Test Case 33: Improper Menu Display For Account Inquiry ,A1-23,Done,software,Noureldin Amer,High,Done,Bryant Stevens,critical,fixed,phase3,v1.1,,,"Function: Balance inquiry
+
+State: System is on and logged in
+
+Steps: Balance inquiry of the accounts
+
+Expected: See all three options available to check the balance
+
+Actual: No option to inquire about “savings” account"
+Typo in menu of possible withdrawal amounts,A1-21,In Progress,software,Noureldin Amer,High,,Noureldin Amer,lowseverity,pending,phase3,v1.1,,,"Function: Amount of money to withdraw
+
+State: System on and logged in
+
+Steps: Withdraw money
+
+Expected: 60 is represented with a $
+
+Actual: Missing $ sign"
+Test case 29 - Transfer - MFT (already tested on expleratory),A1-20,Done,software,Noureldin Amer,High,Done,sina pordanesh,critical,fixed,phase3,v1.1,,,"Function: Transfer money between accounts
+
+State: System is on and logged in
+
+Steps: Transfer money from chequing to savings account
+
+Expected: Money is transferred and the balance is updated accordingly
+
+Actual: Always 50 cents less of the actual amount entered have been transferred"
+Test case 14  - Withdrawal - MFT,A1-19,Done,software,Noureldin Amer,Highest,Done,Noureldin Amer,critical,fixed,phase3,v1.1,,,"Function: Withdraw money from the account
+
+State: System is on and logged in 2
+
+Steps: Deposit 20$ from the chequing account
+
+Expected: 20$ withdrawn and the balance is updated accordingly
+
+Actual: The system dispenses 40$, and the updated balance shows that 40$ has been withdrawn"
+Test case 22 - Deposit - MFT,A1-18,In Progress,software,Noureldin Amer,High,,sina pordanesh,critical,pending,phase3,v1.1,,,"Function: Depositing money
+
+State: System on and logged in
+
+Steps: Deposit money to the chequing account
+
+Expected: Full amount to be depositted
+
+Actual: 10$ is missing in the depositing process"
+Wrong Information on receipt,A1-17,In Progress,software,Noureldin Amer,High,,Noureldin Amer,lowseverity,pair2,pending,phase1,v1.0,,"Function: Transfer money between accounts
+
+State: System on and logged in
+
+Steps: Transfer money from chequing to savings account
+
+Expected: Receipt details must be from Chequings to Savings account
+
+Actual: Written as Savings to Chequing in the receipt but the transaction is accurate"
+Money taken from account after every transfer process,A1-16,Done,software,Noureldin Amer,Highest,Done,Noureldin Amer,critical,fixed,pair2,phase1,v1.1,,"Function: Transfer money between account
+
+State: System on and logged in with card 1
+
+Steps: Transfer 20$ from chequing to savings
+
+Expected: Full amount to be transferred between accounts
+
+Actual: After each transfer process on card 1, $0.50 are taken from the source account account "
+"Error while inquiring balance about ""Money Market"" account",A1-15,In Progress,software,Noureldin Amer,Highest,,Noureldin Amer,critical,pair2,pending,phase1,v1.0,,"Function: Request balance of ""Money Market""
+
+State: On the page of the balance and selections.
+
+Steps: Select the option to see the balance of the ""Money Market"".
+
+Expected: The ""Money Market"" balance is being shown correctly.
+
+Actual: An error “Invalid account type” is displayed on the screen"
+Transfer money to the Money Market,A1-14,In Progress,software,Noureldin Amer,Medium,,sina pordanesh,critical,need-more-info,Pair1,pending,phase1,v1.0,No transfer is possible to the Money Market. The error is: Invalid account type
+Unable to transfer money,A1-13,In Progress,software,Noureldin Amer,Highest,,Noureldin Amer,critical,pair2,pending,phase1,v1.0,,"Function: Transfer from Money Market to the Saving
+
+State: Press the button ""envelope” to transfer the money.
+
+Steps: Put a legitimate 
+
+Expected: Money transferred correctly.
+
+Actual: An error happened which says “Invalid to account type”."
+Transferring money from saving to the checking ,A1-12,In Progress,software,Noureldin Amer,Medium,,sina pordanesh,critical,Pair1,pending,phase1,v1.0,,"Function: Transfer
+
+State: System is requesting a transfer amount
+
+Steps: Tranfer $200
+
+Expected: System dispenses the correct amount of cash; System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing both message to the bank and approval back)
+
+Actual: The system does not transfer the correct amount of money,$0.50 are deducted before the money is transfered"
+Wrong card name,A1-11,In Progress,software,Noureldin Amer,High,,Noureldin Amer,critical,pair2,pending,phase1,v1.0,,"Expected: Function: Withdraw
+
+State: System is requesting a withdrawal amount
+
+Steps: Withdraw $200
+
+Expected: System displays an appropriate message and offers customer the option of choosing to do another transaction or not.
+
+Actual: The system displays the incorrect name of the credit card"
+Transfering from checking to saving ,A1-10,In Progress,software,Noureldin Amer,High,,sina pordanesh,critical,Pair1,pending,phase1,v1.0,,"Function: Transfer
+
+State: System is requesting a transfer amount
+
+Steps: Tranfer $200
+
+Expected: System dispenses the correct amount of cash; System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing both message to the bank and approval back)
+
+Actual: The system does not transfer the correct amount of money,$0.50 are deducted before the money is transfered"
+Wrong amount withdrawn,A1-9,In Progress,software,Noureldin Amer,Highest,,Noureldin Amer,critical,Pair1,pair2,phase1,v1.0,,"Function: Withdraw
+
+State: System is requesting a withdrawal amount
+
+Steps: Withdraw $200
+
+Expected: System dispenses this amount of cash; System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing both message to the bank and approval back)
+
+Actual: The system does not dispense the correct amount of money, only $20 are dispensed when $200 are requested"
+Saving withdraw problem,A1-8,In Progress,software,Noureldin Amer,High,,sina pordanesh,critical,Pair1,pending,phase1,v1.0,,"
+
+Function: Withdraw
+
+State: System is requesting a withdrawal amount
+
+Steps: Withdraw $200
+
+Expected: System dispenses this amount of cash; System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing both message to the bank and approval back)
+
+Actual: The system does not dispense the correct amount of money, only $20 are dispensed when $200 are requested"
+Spelling Mistake in terminal,A1-7,In Progress,software,Noureldin Amer,Highest,,Noureldin Amer,lowseverity,pair2,pending,phase1,v1.0,,"Function: Withdrawing
+
+State: System is requesting that customer insert an envelope
+
+Steps: Select 100$ and insert the envelop
+
+Expected: System displays an appropriate message with no spelling mistakes and offers customer the option of choosing to do another transaction or not.
+
+Actual: System displays a typo after withdrawing $20"
+Withdraw money from the checking account - takes less than indicated,A1-6,In Progress,software,Noureldin Amer,Medium,,sina pordanesh,critical,Pair1,pending,phase1,v1.0,,"Function: Withdraw
+
+State: System is requesting a withdrawal amount
+
+Steps: Withdraw $200 
+
+Expected: System dispenses this amount of cash; System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing both message to the bank and approval back)
+
+Actual: The system does not dispense the correct amount of money, only $20 are dispensed when $200 are requested"
+Deposit money to the saving account,A1-5,In Progress,software,Noureldin Amer,High,,sina pordanesh,critical,Pair1,pending,phase1,v1.0,,"Function: Deposit into savings account
+
+State: System is requesting that customer insert an envelope
+
+Steps: Select 100$ and insert the envelop
+
+Expected: The system prints the correct amount of money (money is increased by 100$)
+
+Actual: The system does not print the correct amount of money. 10$ are withdrawn from the savings account once any amount of money is deposited to the savings account."
+Deposit 100$ to savings account,A1-3,In Progress,software,Noureldin Amer,Highest,,Noureldin Amer,pair2,pending,phase1,v1.0,,,"Function: Deposit
+
+State: System is requesting that customer insert an envelope
+
+Steps: Select 100$ and insert the envelop
+
+Expected: The system prints the correct amount of money (money is increased by 100$)
+
+Actual: The system does not print the correct amount of money. 10$ are withdrawn from the savings account once any amount of money is deposited to the savings account."
+Deposit to the checking account,A1-2,In Progress,software,Noureldin Amer,High,,sina pordanesh,critical,Pair1,pending,phase1,v1.0,,"The deposited money is less than expected 
+
+$10 less than expected
+
+Function: 
+
+State:
+
+Steps: 
+
+Expected: 
+
+Actual: "
+Test Case 6 - Session - MFT,A1-1,Done,software,Noureldin Amer,Highest,Done,Thevin Mahawatte,critical,fixed,phase3,v1.1,,,"The system rejects an unreadable card.
+
+Expected Output - System output should demonstrate that a connection has been established to the Bank
+
+Output - The system does not provide an error message for an unreadable card and the system stops working"
